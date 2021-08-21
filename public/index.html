@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="\external\normalize.css">
+    <link rel="stylesheet" href=".\css\nav.css">
+    <link rel="stylesheet" href=".\css\calendar1.css">
+    <script src="https://kit.fontawesome.com/ff9dc5af4a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h1 class="logo">MyMeetings</h1>
+            <input type="checkbox" name="nav-toggle" id="nav-toggle" class="nav-checked-toggle">
+            
+            <div class="nav-bar">
+               
+                <nav class="main-menu">
+
+                    <ul > <!--class="nav-left"-->
+                        <li>
+                            <a href="#">Caledar</a>
+                        </li>
+                        <li>
+                            <a href="#">Mettings</a>
+                        </li>
+                        <li>
+                            <a href="#">Teams</a>
+                        </li>
+                        
+                        <!-- style="float: right;" -->
+                        <li id="log-state"><a href="#">Logout</a></li>
+                        <li id="usr-profile"> <a href="#" class="user-name">Hello <span> JohnDoe@example.com! </span> </a></li>
+                       
+                        
+                    </ul>
+                    <!-- <ul class="nav-rgt"></ul> -->
+                </nav>
+                
+            </div>
+            <label for="nav-toggle" class="nav-toggle-label"><span><i class="fa fa-bars"></i></span></label>
+            <div class="heading">
+                <h1>Calendar</h1>
+               
+            </div>
+            <div class="main-cntr ">
+                <div class="calendar-menu clearfix">
+                    <hr>
+                    <div class="calendar-date ">
+                        <input type="date" id="cal-date" name="date" value="2021-08-01">
+                    </div>
+                    <div class="date-dsply ">
+                        <h2>12 September 2020</h2>
+                        <h4 class = "current-date">Saturday</h4>
+                    </div>
+                </div>
+                
+                <div class="time clearfix">
+                    <div class="time-hrs">
+                        <span>0</span>
+                        <div class="hour-color"></div>
+                    </div>
+                    <div class="time-hrs  ">
+                        <span>1</span>
+                        <div class="hour-color"></div>
+                    </div>
+                    <div class="time-hrs">
+                        <span>2</span>
+                        <div class="hour-color"></div>
+                    </div>
+                    <div class="time-hrs">
+                        <span>3</span>
+                        <div class="hour-color"></div>
+                    </div>
+                    <div class="time-hrs">
+                        <span>4</span>
+                        <div class="hour-color"></div>
+                    </div>
+                    <div class="time-hrs">
+                        <span>5</span>
+                        <div class="hour-color"></div>
+                    </div>
+                    <div class="time-hrs">
+                        <span>6</span>
+                        <div class="hour-color"></div>
+                    </div>
+                    <div class="time-hrs">
+                        <span>7</span>
+                        <div class="hour-color"></div>
+                    </div>
+                    <div class="time-hrs">
+                        <span>8</span>
+                        <div class="hour-color"></div>
+                    </div>
+                    <div class="time-hrs">
+                        <span>9</span>
+                        <div class="hour-color"></div>
+                    </div>
+                    <div class="time-hrs">
+                        <span>10</span>
+                        <div class="hour-color"></div>
+                    </div>
+                    <div class="time-hrs">
+                        <span>11</span>
+                        <div class="hour-color"></div>
+                    </div>
+                    <div class="time-hrs">
+                        <span>12</span>
+                        <div class="hour-color"></div>
+                    </div>
+                    <div class="time-hrs">
+                        <span>13</span>
+                        <div class="hour-color"></div>
+                    </div>
+                    <div class="time-hrs">
+                        <span>14</span>
+                        <div class="hour-color"></div>
+                    </div>
+                    <div class="time-hrs">
+                        <span>15</span>
+                        <div class="hour-color"></div>
+                    </div>
+                    <div class="time-hrs">
+                        <span>16</span>
+                        <div class="hour-color"></div>
+                    </div>
+                    <div class="time-hrs">
+                        <span>17</span>
+                        <div class="hour-color"></div>
+                    </div>
+                    <div class="time-hrs">
+                        <span>18</span>
+                        <div class="hour-color"></div>
+                    </div>
+                    <div class="time-hrs">
+                        <span>19</span>
+                        <div class="hour-color"></div>
+                    </div>
+                    <div class="time-hrs">
+                        <span>20</span>
+                        <div class="hour-color"></div>
+                    </div>
+                    <div class="time-hrs">
+                        <span>21</span>
+                        <div class="hour-color"></div>
+                    </div>
+                    <div class="time-hrs">
+                        <span>22</span>
+                        <div class="hour-color"></div>
+                    </div>
+                    <div class="time-hrs">
+                        <span>23</span>
+                        <div class="hour-color"></div>
+                    </div>
+                    
+                </div>
+                <div class="calendar-meetings">
+                    <div class="calendar-meeting calendar-meeting1" data-start-time="6:00" data-end-time="7:00">
+                        <div class="meeting-title">
+                            <span><strong>Project Kickoff</strong></span>
+                            
+                        </div>
+                        <div class="attendees">
+                            <span>Attendees:</span>
+                            <span>mark@example.com, xyz@example.com </span>
+                        </div>
+                    </div>
+                    <div class="calendar-meeting calendar-meeting2" data-start-time="9:00" data-end-time="10:30">
+                        <div class="meeting-title">
+                            <span><strong>Project Kickoff</strong></span>
+                    
+                        </div>
+                        <div class="attendees">
+                            <span>Attendees:</span>
+                            <span>mark@example.com, xyz@example.com </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

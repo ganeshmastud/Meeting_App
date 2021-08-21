@@ -1,0 +1,93 @@
+.heading {
+  margin-top: 6em;
+  padding: 0 8%;
+  font-weight: 50;
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main-cntr {
+  width: 84%;
+  margin: 0 auto;
+  padding-left: 1em;
+  border: 1px solid grey;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.calendar-date {
+  float: right;
+  padding-top: 1em;
+
+  padding-right: 1.3em;
+}
+.calendar-date input[type="date"] {
+  width: 20em;
+  font-size: 1.2em;
+  font-weight: 600;
+  padding: 0 1em;
+  border: 1px solid grey;
+  height: 3em;
+  outline: none;
+  border-radius: 10px;
+}
+.calendar-date input[type="date"]:focus {
+  border: 3px solid rgb(112, 111, 111);
+}
+.date-dsply {
+  padding-left: 1em;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.time {
+  width: 100%;
+  position: relative;
+  /* display: flex; */
+}
+.time-hrs {
+  width: 100%;
+  position: relative;
+  /* flex-direction: row;
+  justify-content: flex-start; */
+
+  z-index: 0;
+}
+.time-hrs span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-right: 5px;
+  z-index: 0;
+}
+.hour-color {
+  width: 97%;
+  height: 80px;
+  /* margin: 2px 0; */
+  margin: 8px auto;
+  background-color: aqua;
+}
+/* .calendar-meetings {
+  width: 80%;
+  margin: 0.3% auto;
+
+} */
+.calendar-meeting {
+  position: absolute;
+  width: 80%;
+  margin: 0.3% 1.4%;
+  top: 49.5em; /* ( 40 + 2 ) * 7 + 20 */ /* (80+ 8)*6*/
+  height: 70px;
+  background-color: rgb(245, 243, 238);
+  z-index: 0;
+  padding-left: 1em;
+  padding-top: 1em;
+}
+.calendar-meeting2 {
+  top: 66em; /* ( 40 + 2 ) * 7 + 20 */ /* (80+ 8)*6*/
+  height: 128px; /* height= (80*(( 60(30/100))/100))+8px  ( 70+30) */
+}
+
+.meeting-title {
+  padding-bottom: 0.5em;
+  font-weight: 500;
+}
