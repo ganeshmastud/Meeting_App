@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="\external\normalize.css">
+    <link rel="stylesheet" href=".\css\nav.css">
+
+    <link rel="stylesheet" href=".\css\common-utility.css">
+    <link rel="stylesheet" href=".\css\meetings.css">
+    <script src="https://kit.fontawesome.com/ff9dc5af4a.js" crossorigin="anonymous"></script>
+    <title>Meetings</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h1 class="logo">MyMeetings</h1>
+            <input type="checkbox" name="nav-toggle" id="nav-toggle" class="nav-checked-toggle">
+
+            <div class="nav-bar">
+
+                <nav class="main-menu">
+
+                    <ul>
+                        <!--class="nav-left"-->
+                        <li>
+                            <a href=".\index.html">Calendar</a>
+                        </li>
+                        <li>
+                            <a href=".\meeting.html">Mettings</a>
+                        </li>
+                        <li>
+                            <a href="#">Teams</a>
+                        </li>
+
+                        <!-- style="float: right;" -->
+                        <li id="log-state"><a href="#">Logout</a></li>
+                        <li id="usr-profile"> <a href="#" class="user-name">Hello <span> JohnDoe@example.com! </span>
+                            </a></li>
+
+
+                    </ul>
+                    <!-- <ul class="nav-rgt"></ul> -->
+                </nav>
+
+            </div>
+            <label for="nav-toggle" class="nav-toggle-label"><span><i class="fa fa-bars"></i></span></label>
+
+            <div class="main-cntr ">
+                <div class="heading">
+                    <h1>Meetings</h1>
+
+                </div>
+                <div class="sub-menu">
+
+                    <hr>
+                    <nav class="meetings-menu">
+                        <ul class="links">
+                            <li class="link srch-meet" style="border:1px solid grey; 
+                            border-bottom: none; border-top-left-radius: 3px;
+                            border-top-right-radius: 3px;
+                            "> <a href=".\filter_meeting.html">Filter/ Search meetings</a> </li>
+                            <li class="link add-meet "> <a href=".\meeting.html">Add a meeting</a> </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="container oprn-container ">
+                    <div class="snd-heading">
+                        <h2>Search for Meetings</h2>
+                        <hr>
+                    </div>
+                    <div class="add-meeting">
+                        <form action="">
+                            <label for="filter-meet">Date</label>
+                            <br>
+                            <select name="filter_meet" id="filter-meet">
+                                <option value="All">All</option>
+                                <option value="Past">Past</option>
+                                <option value="Today">Today</option>
+                                <option value="Upcoming">Upcoming</option>
+                            </select>
+                            
+                            <br>
+                            <label for="srch-for">Search for</label><br>
+                            <textarea name="description" id="description"
+                                placeholder="Search using words which describe the meeting"></textarea>
+                            <br>
+                            <button class="btn">Search</button>
+                        </form>
+
+                    </div>
+                    
+                </div>
+                <div class="container meet-dtls">
+                    <div class="meetings-found">
+                        <h2>Meetigs matching search criteria</h2>
+                        <hr>
+                    </div>
+                    <div class="card metting-card">
+                        <div class="date-time">
+                            <h4> 12 September 2020 </h4><span class="meet-time">06:00 - 07:30</span>
+                        </div>
+                        
+                        <span class="meet-title">Project kickoff</span>
+                        <button class="btn left-meet">Excuse yourself</button>
+                    
+                        <hr>
+                        <span class="meet-attendees">Attendees:mark@example.com, jane@example.com</span>
+                     
+                        <select name="add_member" id="select-member" placeholder="Select member">
+                            <option value="" disabled selected hidden>Select member</option>
+                            <option value="member1">member1</option>
+                            <option value="member2">member2</option>
+                            <option value="member3">member3</option>
+                            <option value="member4">member4</option>
+                            <option value="member5">member5</option>
+                        </select>
+                        <button class="btn success">Add</button>
+                    </div>
+                    <div class="card metting-card">
+                        <div class="date-time">
+                            <h4> 12 September 2020 </h4><span class="meet-time">09:00 - 10:30</span>
+                        </div>
+                    
+                        <span class="meet-title">AWS architecture</span>
+                        <button class="btn left-meet">Excuse yourself</button>
+                    
+                        <hr>
+                        <span class="meet-attendees">Attendees:john@example.com, jane@example.com</span>
+                    
+                        <select name="add_member" id="select-member">
+                            <option value="member1">member1</option>
+                            <option value="member2">member2</option>
+                            <option value="member3">member3</option>
+                            <option value="member4">member4</option>
+                            <option value="member5">member5</option>
+                        </select>
+                        <button class="btn success">Add</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>

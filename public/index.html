@@ -8,6 +8,7 @@
     <title>Calendar</title>
     <link rel="stylesheet" href="\external\normalize.css">
     <link rel="stylesheet" href=".\css\nav.css">
+    <link rel="stylesheet" href=".\css\common-utility.css">
     <link rel="stylesheet" href=".\css\calendar1.css">
     <script src="https://kit.fontawesome.com/ff9dc5af4a.js" crossorigin="anonymous"></script>
 </head>
@@ -24,10 +25,10 @@
 
                     <ul > <!--class="nav-left"-->
                         <li>
-                            <a href="#">Caledar</a>
+                            <a href=".\index.html">Calendar</a>
                         </li>
                         <li>
-                            <a href="#">Mettings</a>
+                            <a href=".\meeting.html">Mettings</a>
                         </li>
                         <li>
                             <a href="#">Teams</a>
@@ -44,23 +45,24 @@
                 
             </div>
             <label for="nav-toggle" class="nav-toggle-label"><span><i class="fa fa-bars"></i></span></label>
-            <div class="heading">
-                <h1>Calendar</h1>
-               
-            </div>
+            
             <div class="main-cntr ">
+                <div class="heading">
+                    <h1>Calendar</h1>
+                </div>
+                
                 <div class="calendar-menu clearfix">
                     <hr>
                     <div class="calendar-date ">
                         <input type="date" id="cal-date" name="date" value="2021-08-01">
                     </div>
-                    <div class="date-dsply ">
+                    <div class="snd-heading date-dsply ">
                         <h2>12 September 2020</h2>
                         <h4 class = "current-date">Saturday</h4>
                     </div>
                 </div>
                 
-                <div class="time clearfix">
+                <div class="oprn-container time clearfix">
                     <div class="time-hrs">
                         <span>0</span>
                         <div class="hour-color"></div>

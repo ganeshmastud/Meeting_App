@@ -1,14 +1,14 @@
-.heading h1 {
+/* .heading h1 {
   margin-top: 4rem;
   padding: 0rem 1.5rem;
   font-weight: 200;
   font-size: 2.5em;
   font-family: Arial, Helvetica, sans-serif;
-}
-.calendar-menu hr {
-  width: 94%;
+} */
+hr {
+  width: 96%;
   margin: 0.5rem auto;
-  margin-left: 1.2rem;
+  margin-left: 1.7rem;
   border: none;
   border-bottom: 1px solid var(--dark-white);
 }
@@ -28,10 +28,10 @@
 }
 .calendar-date input[type="date"] {
   width: 8em;
-  margin-right: 0.4rem;
+  margin-right: 0rem;
   font-size: 1em;
   font-weight: 500;
-  padding: 0 1em;
+  /* padding: 0 0em; */
   border: 2px solid grey;
   height: 3em;
   outline: none;
@@ -40,13 +40,13 @@
 .calendar-date input[type="date"]:focus {
   border: 3px solid rgb(100, 97, 97);
 }
-.date-dsply {
+.snd-heading.date-dsply {
   font-size: 0.8em;
   font-weight: 500;
-  padding-left: 1.3rem;
+  padding-left: 1.5rem;
   font-family: Arial, Helvetica, sans-serif;
 }
-.date-dsply h2 {
+.snd-heading h2 {
   font-weight: 500;
   color: black;
 }
@@ -58,7 +58,7 @@
   clear: both;
   display: table;
 }
-.time {
+.oprn-container {
   width: 100%;
   position: relative;
   /* display: flex; */
@@ -108,6 +108,7 @@
   padding-left: 1em;
   padding-top: 1em;
   overflow-y: scroll;
+  opacity: 0.8;
 }
 .calendar-meeting1 {
   top: 48.4em;
@@ -127,47 +128,38 @@
   /* overflow: scroll; */
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 800px) {
   .heading h1 {
-    margin-top: 10rem;
+    margin-top: 7rem;
     font-weight: 200;
-    font-size: 3rem;
-    margin-left: 4%;
+    font-size: 2.5rem;
+    margin-left: 1.6%;
   }
-
-  .calendar-menu hr {
+  hr {
     width: 94%;
     margin: 0.5rem auto;
-    margin-left: 3rem;
-    border: none;
-    border-bottom: 1px solid var(--dark-white);
+    margin-left: 2.2rem;
   }
   .calendar-date input[type="date"] {
     width: 20em;
     font-size: 1.2em;
     height: 3em;
     border-radius: 8px;
-    margin-right: 1.5rem;
-  }
-
-  .calendar-date {
-    padding-top: 0.3em;
+    margin-right: 0.8rem;
   }
   .date-dsply {
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: 500;
-    padding-left: 2.8rem;
-  }
-  .date-dsply h2 {
-    font-weight: 400;
+    margin-left: 1rem;
+    /* padding-left: 2.7rem; */
   }
 
   .time-hrs {
     width: 97%;
   }
   .calendar-meeting {
-    width: 89.5%;
-    left: 5.5%;
+    width: 89%;
+    left: 6%;
     overflow: hidden;
   }
 
@@ -179,5 +171,36 @@
   .calendar-meeting2 {
     top: 73.3em; /* ( 40 + 2 ) * 7 + 20 */ /* (80+ 8)*6*/
     height: 128px; /* height= (80*(( 60(30/100))/100))+8px  ( 70+30) */
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .heading h1 {
+    margin-top: 8rem;
+    margin-left: 1.5%;
+    font-size: 3rem;
+  }
+  hr {
+    width: 95%;
+    margin-left: 2.7rem;
+  }
+
+  .calendar-date input[type="date"] {
+    margin-right: 1.2rem;
+  }
+
+  .calendar-date {
+    padding-top: 0.3em;
+  }
+  .date-dsply {
+    font-size: 1em;
+    margin-left: 1.3rem;
+    /* padding-left: 0.3rem; */
+  }
+  .snd-heading h2 {
+    font-weight: 400;
+  }
+  .calendar-meeting {
+    width: 89%;
   }
 }
