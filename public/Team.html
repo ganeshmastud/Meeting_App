@@ -9,9 +9,9 @@
     <link rel="stylesheet" href=".\css\nav.css">
 
     <link rel="stylesheet" href=".\css\common-utility.css">
-    <link rel="stylesheet" href=".\css\meetings.css">
+    <link rel="stylesheet" href=".\css\team.css">
     <script src="https://kit.fontawesome.com/ff9dc5af4a.js" crossorigin="anonymous"></script>
-    <title>Meetings</title>
+    <title>Teams</title>
 </head>
 
 <body>
@@ -51,66 +51,28 @@
 
             <div class="main-cntr ">
                 <div class="heading">
-                    <h1>Meetings</h1>
+                    <h1>Teams</h1>
 
                 </div>
                 <div class="sub-menu">
-
                     <hr>
-                    <nav class="meetings-menu">
-                        <ul class="links">
-                            <li class="link srch-meet" style="border:1px solid grey; 
-                            border-bottom: none; border-top-left-radius: 3px;
-                            border-top-right-radius: 3px;
-                            "> <a href=".\filter_meeting.html">Filter/ Search meetings</a> </li>
-                            <li class="link add-meet "> <a href=".\meeting.html">Add a meeting</a> </li>
-                        </ul>
-                    </nav>
                 </div>
-                <div class="container oprn-container ">
-                    <div class="snd-heading">
-                        <h2>Search for Meetings</h2>
-                        <hr>
-                    </div>
-                    <div class="add-meeting">
-                        <form action="">
-                            <label for="filter-meet">Date</label>
-                            <br>
-                            <select name="filter_meet" id="filter-meet">
-                                <option value="All">All</option>
-                                <option value="Past">Past</option>
-                                <option value="Today">Today</option>
-                                <option value="Upcoming">Upcoming</option>
-                            </select>
-                            
-                            <br>
-                            <label for="srch-for">Search for</label><br>
-                            <textarea name="description" id="description"
-                                placeholder="Search using words which describe the meeting"></textarea>
-                            <br>
-                            <button class="btn">Search</button>
-                        </form>
-
-                    </div>
-                    
-                </div>
-                <div class="container meet-dtls">
-                    <div class="meetings-found">
-                        <h2>Meetigs matching search criteria</h2>
-                        <hr>
-                    </div>
+                
+                <div class="container meeting-teams">
+                    <span class="edit-meet-hd">View and edit teams you are part of</span>
                     <div class="card metting-card">
-                        <div class="date-time">
-                            <h4> 12 September 2020 </h4><span class="meet-time">06:00 - 07:30</span>
+                        <div class="meet-agenda">
+                            <h5>Customer acquistion campaign</h5>
                         </div>
-                        
-                        <span class="meet-title">Project kickoff</span>
+
+                        <span class="meet#">@customer-acquistion</span>
+                        <p class="meet-descr">Team to come up with the strategies to win over customers by the end of Fy21</p>
                         <button class="btn left-meet">Excuse yourself</button>
-                    
+
                         <hr>
-                        <span class="meet-attendees">Attendees:mark@example.com, jane@example.com</span>
-                     
-                        <select name="add_member" id="select-member" placeholder="Select member">
+                        <span class="meet-attendees"><b>Members</b>:mark@example.com, jane@example.com</span>
+
+                        <select name="add_members" id="select-member" placeholder="Select member">
                             <option value="" disabled selected hidden>Select member</option>
                             <option value="member1">member1</option>
                             <option value="member2">member2</option>
@@ -121,17 +83,19 @@
                         <button class="btn success">Add</button>
                     </div>
                     <div class="card metting-card">
-                        <div class="date-time">
-                            <h4> 12 September 2020 </h4><span class="meet-time">09:00 - 10:30</span>
-                        </div>
+                    <div class="meet-agenda">
+                        <h5>Mern Stack training</h5>
+                    </div>
                     
-                        <span class="meet-title">AWS architecture</span>
+                    <span class="meet#">@mern-stack-training</span>
+                    <p class="meet-descr">Group Attending MERN stack training for website revamp project</p>
                         <button class="btn left-meet">Excuse yourself</button>
-                    
+
                         <hr>
-                        <span class="meet-attendees">Attendees:john@example.com, jane@example.com</span>
-                    
-                        <select name="add_member" id="select-member">
+                        <span class="meet-attendees"><b>Members</b>:john@example.com, jane@example.com</span>
+
+
+                        <select name="add_members" id="select-member">
                             <option value="" disabled selected hidden>Select member</option>
                             <option value="member1">member1</option>
                             <option value="member2">member2</option>
