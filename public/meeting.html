@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="\external\normalize.css">
+    <link rel="stylesheet" href=".\css\nav.css">
+    
+    <link rel="stylesheet" href=".\css\common-utility.css">
+    <link rel="stylesheet" href=".\css\meetings.css">
+    <script src="https://kit.fontawesome.com/ff9dc5af4a.js" crossorigin="anonymous"></script>
+    <title>Meetings</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h1 class="logo">MyMeetings</h1>
+            <input type="checkbox" name="nav-toggle" id="nav-toggle" class="nav-checked-toggle">
+            
+            <div class="nav-bar">
+            
+                <nav class="main-menu">
+            
+                    <ul>
+                        <!--class="nav-left"-->
+                        <li>
+                            <a href=".\index.html">Calendar</a>
+                        </li>
+                        <li>
+                            <a href=".\meeting.html">Mettings</a>
+                        </li>
+                        <li>
+                            <a href="#">Teams</a>
+                        </li>
+            
+                        <!-- style="float: right;" -->
+                        <li id="log-state"><a href="#">Logout</a></li>
+                        <li id="usr-profile"> <a href="#" class="user-name">Hello <span> JohnDoe@example.com! </span> </a></li>
+            
+            
+                    </ul>
+                    <!-- <ul class="nav-rgt"></ul> -->
+                </nav>
+            
+            </div>
+            <label for="nav-toggle" class="nav-toggle-label"><span><i class="fa fa-bars"></i></span></label>
+            
+            <div class="main-cntr ">
+                <div class="heading">
+                    <h1>Meetings</h1>
+                
+                </div>
+                <div class="sub-menu">
+                    
+                    <hr>
+                    <nav class="meetings-menu">
+                        <ul class="links">
+                            <li class="link srch-meet"> <a href=".\filter_meeting.html">Filter/ Search meetings</a> </li>
+                            <li class="link add-meet " style="border:1px solid grey; 
+                            border-bottom: none; border-top-left-radius: 3px;
+                            border-top-right-radius: 3px;
+                            "> <a href=".\meeting.html">Add a meeting</a> </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="oprn-container">
+                    <div class="snd-heading">
+                        <h2>Add a new Meeting</h2>
+                        <hr>
+                    </div>
+                    <div class="add-meeting">
+                        <form action="">
+                            <label for="add-date">Date</label>
+                            <br>
+                            
+                            <input type="date" id="add-date" name="adddate" > <br>
+                            <label for="start-time">Start time (hh:mm)</label><br>
+                            <input id="start-time" type="time" name="starttime"><br>
+                            <label for="end-time">End time (hh:mm)</label><br>
+                            <input id="end-time" type="time" name="endtime"><br>
+                            <label for="description">Description</label><br>
+                            <textarea name="description" id="description"  placeholder="What is the agenda of the meeting?"></textarea>
+                            <br>
+                            <label for="add-member">EmailIDs of attendees, or team's short</label><br>
+                            <input type="text" id="add-members"   placeholder="john@example.com, @annual-day, mark@example.com">
+                            <br><span class="note">Seperate emailids / team short names by commas - team short names always beginwith @</span> 
+                            <br>
+                            <button class="btn">Add meeting</button>
+                        </form>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            
+        </section>
+    </main>
+</body>
+</html>
