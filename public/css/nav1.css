@@ -1,0 +1,253 @@
+:root {
+  --grey: rgb(224, 218, 218);
+  --black: black;
+  --soft-blue: rgb(61, 128, 128);
+  --dark-white: rgb(197, 190, 190);
+}
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+.header {
+  width: 100%;
+  /* display: flex; */
+  background-color: var(--grey);
+  position: fixed;
+  padding-bottom: 0.4rem;
+  top: 0;
+  z-index: 2;
+}
+.head-menu {
+  width: 100%;
+  /* display: flex; */
+  margin: 0 auto;
+}
+.logo {
+  width: 100%;
+  margin-top: 0;
+  padding: 0.5rem 0rem;
+  margin-left: 5%;
+  position: fixed;
+  font-weight: 400;
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  z-index: 2;
+  /* background-color: var(--grey); */
+}
+#nav-toggle {
+  display: block;
+  visibility: hidden;
+}
+
+.nav-toggle-label {
+  width: 4rem;
+  margin-right: 5%;
+  margin-top: 0;
+  padding: 0.4rem 0rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 100;
+  text-align: center;
+  border: 1px solid var(--dark-white);
+  border-radius: 5px;
+
+  z-index: 2;
+}
+/* .logo + #nav-toggle:checked {
+  display: none;
+} */
+#nav-toggle:checked ~ .nav-bar {
+  display: flex;
+}
+.col-right {
+  margin-top: 0;
+  padding-top: 0;
+}
+.col-left ul {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.col-right ul {
+  margin: 0 auto;
+  padding-left: 0;
+}
+.nav-bar {
+  width: 100%;
+  margin: 0;
+  padding-top: 1.5em;
+  position: fixed;
+  top: 0;
+  display: none;
+  background-color: var(--grey);
+  z-index: 1;
+}
+.main-menu {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex: 1 0 100%;
+}
+/* .nav-bar .main-menu ul {
+  margin-top: 0;
+  margin-left: 0;
+  display: inline;
+} */
+
+.nav-bar li {
+  display: flex;
+  list-style-type: none;
+  text-align: left;
+}
+.nav-bar li a {
+  width: 100%;
+  margin-top: 0px;
+  padding: 1% 5%;
+  text-decoration: none;
+  display: flex;
+  font-size: 1.2rem;
+
+  /* height: 50px; */
+
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--black);
+  border-bottom: 1px solid var(--dark-white);
+  opacity: 0.6;
+}
+.nav-bar li a:hover {
+  opacity: 1;
+  background-color: var(--dark-white);
+}
+.nav-bar li a:active {
+  opacity: 1;
+}
+
+.nav-bar li a span {
+  color: var(--soft-blue);
+}
+
+@media screen and (min-width: 800px) {
+  .logo {
+    display: none;
+  }
+  .nav-bar ul {
+    margin: 0;
+  }
+  .row,
+  .col {
+    margin: 0;
+    padding: 0;
+  }
+  .nav-bar {
+    width: 100%;
+    top: 0;
+    padding-top: 0;
+    /* display: inline-block; */
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .main-menu {
+    width: 100%;
+    margin: 0 auto;
+    margin-left: 4.3%;
+    /* display: flex;
+    flex-flow: row wrap; */
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 9%;
+  }
+  .col-right {
+  }
+  .nav-bar li {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+    float: left;
+  }
+  .nav-bar li a {
+    width: auto;
+    padding: 0.8em 0.3em;
+    font-size: 1.2em;
+    text-align: center;
+    border-bottom: none;
+    /* display: flex; */
+  }
+  .nav-toggle-label {
+    display: none;
+  }
+  /* #usr-profile {
+    float: right;
+  }
+  #log-state {
+    float: right;
+  } */
+  /* #usr-profile,
+  #log-state {
+    justify-content: flex-end;
+  } */
+}
+
+@media screen and (min-width: 1000px) {
+  .main-menu {
+    margin-left: 4%;
+  }
+  .row {
+    margin-right: 8%;
+  }
+  /* .nav-bar .main-menu ul {
+    width: 100%;
+    margin: 0 auto;
+    display: inline;
+  } */
+  /* .nav-bar li {
+    margin: 0 auto;
+    display: inline-block;
+    list-style-type: none;
+    float: left;
+  } */
+  .nav-bar li a {
+    padding: 1em 0.5em;
+    font-size: 1.5em;
+  }
+}
+
+/* .hrs span {
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
+
+/* .main-menu {
+  padding: 0;
+  margin: 0;
+  display: float;
+  width: 100%;
+} */
+/* .nav-left {
+  width: 100%;
+  margin: 0 auto;
+}
+.nav-rgt {
+  width: 100%;
+} */
+
+/* .nav-left li {
+  float: left;
+  padding-left: 1em;
+}
+.nav-rgt li {
+  float: right;
+  padding-left: 0;
+  padding-right: 1em;
+} */
