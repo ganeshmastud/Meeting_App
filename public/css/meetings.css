@@ -16,6 +16,7 @@ hr {
   /* margin-left: 2.3em; */
   margin: 0 auto;
 }
+/* sub menu links  */
 .links {
   width: 99%;
   margin: 1rem auto;
@@ -51,6 +52,7 @@ hr {
   border-radius: 3px;
 }
 /* container */
+
 .oprn-container {
   background-color: #4ea1a1;
 }
