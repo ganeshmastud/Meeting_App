@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="\external\normalize.css">
-    <link rel="stylesheet" href=".\css\nav.css">
+    <link rel="stylesheet" href=".\css\nav1.css">
 
     <link rel="stylesheet" href=".\css\common-utility.css">
     <link rel="stylesheet" href=".\css\team.css">
@@ -17,38 +17,47 @@
 <body>
     <main>
         <section>
-            <h1 class="logo">MyMeetings</h1>
-            <input type="checkbox" name="nav-toggle" id="nav-toggle" class="nav-checked-toggle">
-
-            <div class="nav-bar">
-
-                <nav class="main-menu">
-
-                    <ul>
-                        <!--class="nav-left"-->
-                        <li>
-                            <a href=".\index.html">Calendar</a>
-                        </li>
-                        <li>
-                            <a href=".\meeting.html">Mettings</a>
-                        </li>
-                        <li>
-                            <a href=".\Team.html">Teams</a>
-                        </li>
-
-                        <!-- style="float: right;" -->
-                        <li id="log-state"><a href="#">Logout</a></li>
-                        <li id="usr-profile"> <a href="#" class="user-name">Hello <span> JohnDoe@example.com! </span>
-                            </a></li>
-
-
-                    </ul>
-                    <!-- <ul class="nav-rgt"></ul> -->
-                </nav>
-
+            
+            <div class="header">
+                <div class="head-menu">
+            
+                    <h1 class="logo">MyMeetings</h1>
+                    <input type="checkbox" name="nav-toggle" id="nav-toggle" class="nav-checked-toggle">
+            
+                    <div class="nav-bar">
+            
+                        <nav class="main-menu">
+                            <div class="row">
+            
+                                <div class="col col-left">
+                                    <ul>
+                                        <li>
+                                            <a href=".\index.html">Calendar</a>
+                                        </li>
+                                        <li>
+                                            <a href=".\meeting.html">Mettings</a>
+                                        </li>
+                                        <li>
+                                            <a href=".\Team.html">Teams</a>
+                                        </li>
+            
+                                    </ul>
+                                </div>
+                                <div class="col col-right">
+                                    <ul>
+            
+                                        <li id="usr-profile"> <a href="#" class="user-name">Hello <span> JohnDoe@example.com!
+                                                </span></a> </li>
+                                        <li id="log-state"><a href="#">Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+            
+                    </div>
+                    <label for="nav-toggle" class="nav-toggle-label"><span><i class="fa fa-bars"></i></span></label>
+                </div>
             </div>
-            <label for="nav-toggle" class="nav-toggle-label"><span><i class="fa fa-bars"></i></span></label>
-
             <div class="main-cntr ">
                 <div class="heading">
                     <h1>Teams</h1>
@@ -60,51 +69,118 @@
                 
                 <div class="container meeting-teams">
                     <span class="edit-meet-hd">View and edit teams you are part of</span>
-                    <div class="card metting-card">
-                        <div class="meet-agenda">
-                            <h5>Customer acquistion campaign</h5>
+                    <div class="meetings-attend-or-edit">
+                        <div class="card metting-card">
+                            <div class="meet-agenda">
+                                <h5>Customer acquistion campaign</h5>
+                            </div>
+                        
+                            <span class="meet">@customer-acquistion</span>
+                            <p class="meet-descr">Team to come up with the strategies to win over customers by the end of Fy21</p>
+                            <button class="btn left-meet">Excuse yourself</button>
+                        
+                            <hr>
+                            <span class="meet-attendees"><b>Members</b>:mark@example.com, jane@example.com</span>
+                            <div class="choose-memebers">
+                                <select name="add_members" id="select-member" placeholder="Select member">
+                                    <option value="" disabled selected hidden>Select member</option>
+                                    <option value="member1">member1</option>
+                                    <option value="member2">member2</option>
+                                    <option value="member3">member3</option>
+                                    <option value="member4">member4</option>
+                                    <option value="member5">member5</option>
+                                </select>
+                                <button class="btn success">Add</button>
+                            </div>
+                            
                         </div>
+                        <div class="card metting-card">
+                            <div class="meet-agenda">
+                                <h5>Customer acquistion campaign</h5>
+                            </div>
+                        
+                            <span class="meet">@customer-acquistion</span>
+                            <p class="meet-descr">Team to come up with the strategies to win over customers by the end of Fy21</p>
+                            <button class="btn left-meet">Excuse yourself</button>
+                        
+                            <hr>
+                            <span class="meet-attendees"><b>Members</b>:mark@example.com, jane@example.com</span>
+                            <div class="choose-memebers">
+                                <select name="add_members" id="select-member" placeholder="Select member">
+                                    <option value="" disabled selected hidden>Select member</option>
+                                    <option value="member1">member1</option>
+                                    <option value="member2">member2</option>
+                                    <option value="member3">member3</option>
+                                    <option value="member4">member4</option>
+                                    <option value="member5">member5</option>
+                                </select>
+                                <button class="btn success">Add</button>
+                            </div>
+                            
+                        </div>
+                        <div class="card metting-card">
+                            <div class="meet-agenda">
+                                <h5>Mern Stack training</h5>
+                            </div>
+                        
+                            <span class="meet#">@mern-stack-training</span>
+                            <p class="meet-descr">Group Attending MERN stack training for website revamp project</p>
+                            <button class="btn left-meet">Excuse yourself</button>
+                        
+                            <hr>
+                            <span class="meet-attendees"><b>Members</b>:john@example.com, jane@example.com</span>
+                        
+                            <div class="choose-memebers">
+                                <select name="add_members" id="select-member">
+                                    <option value="" disabled selected hidden>Select member</option>
+                                    <option value="member1">member1</option>
+                                    <option value="member2">member2</option>
+                                    <option value="member3">member3</option>
+                                    <option value="member4">member4</option>
+                                    <option value="member5">member5</option>
+                                </select>
+                                <button class="btn btn-success">Add</button>
+                            </div>
+                        
+                        </div>
+                        <div class="card metting-card">
+                            <div class="meet-agenda">
+                                <h5>Mern Stack training</h5>
+                            </div>
+                        
+                            <span class="meet#">@mern-stack-training</span>
+                            <p class="meet-descr">Group Attending MERN stack training for website revamp project</p>
+                            <button class="btn left-meet">Excuse yourself</button>
+                        
+                            <hr>
+                            <span class="meet-attendees"><b>Members</b>:john@example.com, jane@example.com</span>
+                        
+                            <div class="choose-memebers">
+                                <select name="add_members" id="select-member">
+                                    <option value="" disabled selected hidden>Select member</option>
+                                    <option value="member1">member1</option>
+                                    <option value="member2">member2</option>
+                                    <option value="member3">member3</option>
+                                    <option value="member4">member4</option>
+                                    <option value="member5">member5</option>
+                                </select>
+                                <button class="btn btn-success">Add</button>
+                            </div>
+                        
+                        </div>
+                        <div class="card add-metting-card">
+                            <!-- style="display: flex;justify-content: center;align-items: center;"> -->
+                            <div class="add-meeting" style="display: flex;justify-content: center;">
+                                <span>+</span>
+                            </div>
+                            
+                        </div>
+                        <div class="card card-blank">
 
-                        <span class="meet#">@customer-acquistion</span>
-                        <p class="meet-descr">Team to come up with the strategies to win over customers by the end of Fy21</p>
-                        <button class="btn left-meet">Excuse yourself</button>
-
-                        <hr>
-                        <span class="meet-attendees"><b>Members</b>:mark@example.com, jane@example.com</span>
-
-                        <select name="add_members" id="select-member" placeholder="Select member">
-                            <option value="" disabled selected hidden>Select member</option>
-                            <option value="member1">member1</option>
-                            <option value="member2">member2</option>
-                            <option value="member3">member3</option>
-                            <option value="member4">member4</option>
-                            <option value="member5">member5</option>
-                        </select>
-                        <button class="btn success">Add</button>
-                    </div>
-                    <div class="card metting-card">
-                    <div class="meet-agenda">
-                        <h5>Mern Stack training</h5>
+                        </div>
+                        
                     </div>
                     
-                    <span class="meet#">@mern-stack-training</span>
-                    <p class="meet-descr">Group Attending MERN stack training for website revamp project</p>
-                        <button class="btn left-meet">Excuse yourself</button>
-
-                        <hr>
-                        <span class="meet-attendees"><b>Members</b>:john@example.com, jane@example.com</span>
-
-
-                        <select name="add_members" id="select-member">
-                            <option value="" disabled selected hidden>Select member</option>
-                            <option value="member1">member1</option>
-                            <option value="member2">member2</option>
-                            <option value="member3">member3</option>
-                            <option value="member4">member4</option>
-                            <option value="member5">member5</option>
-                        </select>
-                        <button class="btn success">Add</button>
-                    </div>
                 </div>
 
             </div>
