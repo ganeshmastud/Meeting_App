@@ -4,7 +4,7 @@
   --soft-blue: rgb(61, 128, 128);
   --dark-white: rgb(197, 190, 190);
 }
-.body {
+body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
