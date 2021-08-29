@@ -168,10 +168,10 @@
                             </div>
                         
                         </div>
-                        <div class="card add-metting-card">
+                        <div class="card add-metting-card" id ="add-team">
                             <!-- style="display: flex;justify-content: center;align-items: center;"> -->
                             <div class="add-meeting" style="display: flex;justify-content: center;">
-                                <span>+</span>
+                                <span class="Add-meting"  >+</span>
                             </div>
                             
                         </div>
@@ -182,11 +182,55 @@
                     </div>
                     
                 </div>
+                <div class="add-team-form" id="addTeamForm">
+                    <h2>Add Teams</h2>
+                    <form action="#">
+                        <div class="form-grp">
+                            <div class="team-names">
+                                <label for="team-name">Team Name</label><br>
+                                <input type="text" id="team-name" placeholder="Enter a team name" required>
+                            </div>
+                            <div class="team-tags" >
+                                <label for="team-tag">Team Tag</label><br>
+                                <input type="text" id ="team-tag" placeholder="@meet" required>
+                            </div>
+                            <div class="team-descr">
+                                <label for="team-descrp">Team Description</label><br>
+                                <textarea name="team_description" id="team-descrp" cols="20" rows="3"></textarea>
+                            </div>
+                            <div class="choose-memebers">
+                                <label for="select-member">Select Members</label><br>
+                                <select name="add_members" id="select-member">
+                                    <option value="" disabled selected hidden>Select member</option>
+                                    <option value="member1">member1</option>
+                                    <option value="member2">member2</option>
+                                    <option value="member3">member3</option>
+                                    <option value="member4">member4</option>
+                                    <option value="member5">member5</option>
+                                </select>
+                                <button class="btn btn-success">Add</button>
+                            </div>
+                            <button class="btn btn-submit" value="submit">Add Team</button>
+
+                        </div>
+                        <div id="close"><span>X</span></div>
+                    </form>
+                </div>
 
             </div>
 
         </section>
     </main>
+    <script>
+        let add_team = document.getElementById("add-team");
+        add_team.addEventListener("click",function(){
+            document.getElementById("addTeamForm").style.display="block";
+        });
+        let close_window = document.getElementById("close");
+            close_window .addEventListener("click", function () {
+                document.getElementById("addTeamForm").style.display = "none";
+            })
+    </script>
 </body>
 
 </html>

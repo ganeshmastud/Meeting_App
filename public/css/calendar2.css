@@ -203,56 +203,35 @@ hr {
   .logo {
     margin-left: 9%;
   }
-  .main-menu {
-    padding-left: 2.5%;
-  }
 }
 @media screen and (min-width: 350px) {
   .logo {
     margin-left: 8%;
-  }
-  .main-menu {
-    padding-left: 2.2%;
   }
 }
 @media screen and (min-width: 400px) {
   .logo {
     margin-left: 7%;
   }
-  .main-menu {
-    padding-left: 2%;
-  }
 }
 @media screen and (min-width: 500px) {
   .logo {
     margin-left: 7%;
-  }
-  .main-menu {
-    padding-left: 1.7%;
   }
 }
 @media screen and (min-width: 520px) {
   .logo {
     margin-left: 6%;
   }
-  .main-menu {
-    padding-left: 1.2%;
-  }
 }
 @media screen and (min-width: 550px) {
   .logo {
     margin-left: 5.7%;
   }
-  .main-menu {
-    padding-left: 1%;
-  }
 }
 @media screen and (min-width: 600px) {
   .logo {
     margin-left: 5.5%;
-  }
-  .main-menu {
-    padding-left: 0.8%;
   }
 }
 @media screen and (min-width: 720px) {
