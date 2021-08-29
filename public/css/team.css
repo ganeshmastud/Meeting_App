@@ -137,7 +137,7 @@ hr {
 .form-grp {
   display: flex;
   flex-direction: column;
-  padding-left: 23%;
+  padding-left: 15%;
   font-family: "Roboto", sans-serif;
   margin: 0 auto;
 }
@@ -185,11 +185,17 @@ label {
   .add-team-form {
     left: 5%;
   }
+  .form-grp {
+    padding-left: 18%;
+  }
 }
 @media screen and (min-width: 400px) {
   .add-team-form {
     left: 8%;
     width: 350px;
+  }
+  .form-grp {
+    padding-left: 20%;
   }
 }
 @media screen and (min-width: 450px) {
@@ -222,6 +228,9 @@ label {
     top: 3%;
     left: 25%;
   }
+  .form-grp {
+    padding-left: 22%;
+  }
 }
 @media screen and (min-width: 800px) {
   .heading h1 {
@@ -229,6 +238,9 @@ label {
   }
   .add-team-form {
     left: 30%;
+  }
+  .form-grp {
+    padding-left: 123%;
   }
 }
 @media screen and (min-width: 950px) {
