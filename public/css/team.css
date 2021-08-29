@@ -240,7 +240,7 @@ label {
     left: 30%;
   }
   .form-grp {
-    padding-left: 123%;
+    padding-left: 22%;
   }
 }
 @media screen and (min-width: 950px) {
@@ -256,5 +256,8 @@ label {
   }
   .add-team-form {
     left: 35%;
+  }
+  .form-grp {
+    padding-left: 22%;
   }
 }
