@@ -52,7 +52,7 @@ label {
 .email-id,
 .cnfm-pwd,
 .new-pwd {
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 
 .frm-inp input {
@@ -85,8 +85,8 @@ label {
 }
 .btn {
   width: 100%;
-  padding-top: 0.4em;
-  padding-bottom: 0.4em;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
   margin: 0 auto;
   font-size: 1em;
   font-weight: bold;
@@ -120,11 +120,11 @@ label {
   }
   .login-box,
   .reg-box {
-    width: 250px;
+    width: 220px;
     margin: 0 auto;
   }
   .form-grp input {
-    width: 85.6%;
+    width: 84%;
   }
 }
 
@@ -134,11 +134,11 @@ label {
   }
   .login-box,
   .reg-box {
-    width: 300px;
+    width: 270px;
     margin: 0 auto;
   }
   .form-grp input {
-    width: 87.7%;
+    width: 86%;
     padding: 0.47em 1.8em;
     padding-right: 0.4em;
   }
@@ -146,10 +146,10 @@ label {
     padding: 0.6em 0.5em;
   }
 }
-@media screen and (min-width: 500px) {
+/* @media screen and (min-width: 500px) {
   .login-box,
   .reg-box {
-    width: 400px;
+    width: 300px;
     margin: 0 auto;
   }
   label {
@@ -165,8 +165,8 @@ label {
     padding-bottom: 0.5em;
     font-size: 1em;
   }
-}
-@media screen and (min-width: 700px) {
+} */
+@media screen and (min-width: 500px) {
   .heading h1 {
     margin-top: 0.67em;
   }
