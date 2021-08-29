@@ -114,6 +114,10 @@ label {
   text-align: center;
 }
 @media screen and (min-width: 300px) {
+  .login-container,
+  .reg-container {
+    margin: 3% auto;
+  }
   .login-box,
   .reg-box {
     width: 250px;
@@ -125,11 +129,6 @@ label {
 }
 
 @media screen and (min-width: 400px) {
-  .login-container,
-  .reg-container {
-    margin: 3% auto;
-  }
-
   .heading h1 {
     margin-top: 0;
   }
