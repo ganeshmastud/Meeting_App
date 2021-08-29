@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href=".\external\normalize.css">
-    <link rel="stylesheet" href=".\css\login.css">
+    <link rel="stylesheet" href=".\css\login1.css">
     <script src="https://kit.fontawesome.com/ff9dc5af4a.js" crossorigin="anonymous"></script>
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
@@ -27,7 +27,7 @@
                     <div class="heading">
                         <h1>Register</h1>
                     </div>
-                    <form action="#">
+                    <form action=".\login.html">
 
                         <div class="form-grp">
                             <div class="eml-id-lbl">
@@ -36,7 +36,7 @@
                             <div class="frm-inp email-id">
                                 <div class="inp-icon-cntr">
                                     <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                                    <input type="text" placeholder="Enter email id" name="email" id="eml-id">
+                                    <input type="text" placeholder="Enter email id" name="email" id="eml-id" required>
                                 </div>
 
                             </div>
@@ -51,7 +51,7 @@
                             <div class="frm-inp pwd new-pwd">
                                 <div class="inp-icon-cntr">
                                     <span><i class="fa fa-lock" aria-hidden="true"></i></span>
-                                    <input type="password" placeholder="Enter Password" name="password"
+                                    <input type="password" placeholder="Enter Password" name="password" required
                                         id="new-password">
                                 </div>
 
@@ -67,7 +67,7 @@
                             <div class="frm-inp pwd cnfm-pwd">
                                 <div class="inp-icon-cntr">
                                     <span><i class="fa fa-lock" aria-hidden="true"></i></span>
-                                    <input type="password" placeholder="Enter Password" name="cnfm_password"
+                                    <input type="password" placeholder="Enter Password" name="cnfm_password" required
                                         id="cnfm-password">
                                 </div>
 
