@@ -119,6 +119,9 @@ label {
     width: 200px;
     margin: 0 auto;
   }
+  .form-grp input {
+    width: 81%;
+  }
 }
 
 @media screen and (min-width: 400px) {
