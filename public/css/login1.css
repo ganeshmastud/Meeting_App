@@ -27,7 +27,7 @@ a {
 }
 .login-box,
 .reg-box {
-  width: 40%;
+  width: 400px;
   padding: 2em;
 
   margin: 0 auto;
