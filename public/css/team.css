@@ -123,7 +123,7 @@ hr {
   display: none;
   position: absolute;
   top: 5%;
-  left: 5%;
+  left: 6%;
   width: 300px;
   margin: 0 auto;
   border-radius: 5px;
@@ -187,12 +187,18 @@ label {
   margin-bottom: 0.5em;
 }
 #choose-member {
-  width: 77%;
+  width: 70%;
   padding: 0.5em 0.6em 0.5em 0.5em;
+}
+
+@media screen and (min-width: 300px) {
+  .add-team-form {
+    left: 3%;
+  }
 }
 @media screen and (min-width: 350px) {
   .add-team-form {
-    left: 5%;
+    left: 8%;
   }
   /* .form-grp {
     padding-left: 18%;
@@ -202,6 +208,9 @@ label {
   .add-team-form {
     left: 8%;
     width: 350px;
+  }
+  #choose-member {
+    width: 77%;
   }
   /* .form-grp {
     padding-left: 20%;
