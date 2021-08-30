@@ -68,21 +68,21 @@
                 </div>
                 
                 <div class="container meeting-teams">
-                    <span class="edit-meet-hd">View and edit teams you are part of</span>
-                    <div class="meetings-attend-or-edit">
-                        <div class="card metting-card">
-                            <div class="meet-agenda">
+                    <span class="edit-team-hd">View and edit teams you are part of</span> <!-- container heading -->
+                    <div class="team-attend-or-edit">
+                        <div class="card team-card">
+                            <div class="team-title">
                                 <h5>Customer acquistion campaign</h5>
                             </div>
                         
                             <span class="meet">@customer-acquistion</span>
-                            <p class="meet-descr">Team to come up with the strategies to win over customers by the end of Fy21</p>
-                            <button class="btn left-meet">Excuse yourself</button>
+                            <p class="team-descr">Team to come up with the strategies to win over customers by the end of Fy21</p>
+                            <button class="btn left-team">Excuse yourself</button>
                         
                             <hr>
-                            <span class="meet-attendees"><b>Members</b>:mark@example.com, jane@example.com</span>
+                            <span class="team-attendees"><b>Members</b>:mark@example.com, jane@example.com</span>
                             <div class="choose-memebers">
-                                <select name="add_members" id="select-member" placeholder="Select member">
+                                <select name="add_members" class="select-members" id="select-member" placeholder="Select member">
                                     <option value="" disabled selected hidden>Select member</option>
                                     <option value="member1">member1</option>
                                     <option value="member2">member2</option>
@@ -90,23 +90,23 @@
                                     <option value="member4">member4</option>
                                     <option value="member5">member5</option>
                                 </select>
-                                <button class="btn success">Add</button>
+                                <button class="btn btn-success">Add</button>
                             </div>
                             
                         </div>
-                        <div class="card metting-card">
-                            <div class="meet-agenda">
+                        <div class="card team-card">
+                            <div class="team-title">
                                 <h5>Customer acquistion campaign</h5>
                             </div>
                         
                             <span class="meet">@customer-acquistion</span>
-                            <p class="meet-descr">Team to come up with the strategies to win over customers by the end of Fy21</p>
-                            <button class="btn left-meet">Excuse yourself</button>
+                            <p class="team-descr">Team to come up with the strategies to win over customers by the end of Fy21</p>
+                            <button class="btn left-team">Excuse yourself</button>
                         
                             <hr>
-                            <span class="meet-attendees"><b>Members</b>:mark@example.com, jane@example.com</span>
+                            <span class="team-attendees"><b>Members</b>:mark@example.com, jane@example.com</span>
                             <div class="choose-memebers">
-                                <select name="add_members" id="select-member" placeholder="Select member">
+                                <select name="add_members" class="select-members" id="select-member" placeholder="Select member">
                                     <option value="" disabled selected hidden>Select member</option>
                                     <option value="member1">member1</option>
                                     <option value="member2">member2</option>
@@ -114,24 +114,24 @@
                                     <option value="member4">member4</option>
                                     <option value="member5">member5</option>
                                 </select>
-                                <button class="btn success">Add</button>
+                                <button class="btn btn-success">Add</button>
                             </div>
                             
                         </div>
-                        <div class="card metting-card">
-                            <div class="meet-agenda">
+                        <div class="card team-card">
+                            <div class="team-title">
                                 <h5>Mern Stack training</h5>
                             </div>
                         
                             <span class="meet#">@mern-stack-training</span>
-                            <p class="meet-descr">Group Attending MERN stack training for website revamp project</p>
-                            <button class="btn left-meet">Excuse yourself</button>
+                            <p class="team-descr">Group Attending MERN stack training for website revamp project</p>
+                            <button class="btn left-team">Excuse yourself</button>
                         
                             <hr>
-                            <span class="meet-attendees"><b>Members</b>:john@example.com, jane@example.com</span>
+                            <span class="team-attendees"><b>Members</b>:john@example.com, jane@example.com</span>
                         
                             <div class="choose-memebers">
-                                <select name="add_members" id="select-member">
+                                <select name="add_members" class="select-members" id="select-member">
                                     <option value="" disabled selected hidden>Select member</option>
                                     <option value="member1">member1</option>
                                     <option value="member2">member2</option>
@@ -143,20 +143,20 @@
                             </div>
                         
                         </div>
-                        <div class="card metting-card">
-                            <div class="meet-agenda">
+                        <div class="card team-card">
+                            <div class="team-title">
                                 <h5>Mern Stack training</h5>
                             </div>
                         
                             <span class="meet#">@mern-stack-training</span>
-                            <p class="meet-descr">Group Attending MERN stack training for website revamp project</p>
-                            <button class="btn left-meet">Excuse yourself</button>
+                            <p class="team-descr">Group Attending MERN stack training for website revamp project</p>
+                            <button class="btn left-team">Excuse yourself</button>
                         
                             <hr>
-                            <span class="meet-attendees"><b>Members</b>:john@example.com, jane@example.com</span>
+                            <span class="team-attendees"><b>Members</b>:john@example.com, jane@example.com</span>
                         
                             <div class="choose-memebers">
-                                <select name="add_members" id="select-member">
+                                <select name="add_members" class="select-members" id="select-member">
                                     <option value="" disabled selected hidden>Select member</option>
                                     <option value="member1">member1</option>
                                     <option value="member2">member2</option>
@@ -168,7 +168,7 @@
                             </div>
                         
                         </div>
-                        <div class="card add-metting-card" id ="add-team">
+                        <div class="card add-team-card" id ="add-team">
                             <!-- style="display: flex;justify-content: center;align-items: center;"> -->
                             <div class="add-meeting" style="display: flex;justify-content: center;">
                                 <span class="Add-meting"  >+</span>
@@ -183,38 +183,44 @@
                     
                 </div>
                 <div class="add-team-form" id="addTeamForm">
-                    <h2>Add Teams</h2>
-                    <form action="#">
-                        <div class="form-grp">
-                            <div class="team-names">
-                                <label for="team-name">Team Name</label><br>
-                                <input type="text" id="team-name" placeholder="Enter a team name" required>
+                    <div class="add-team-form-container" >
+                        <h2>Add Teams</h2>
+                        <form action="#">
+                            <div class="form-grp">
+                                <div class="form-control team-names">
+                                    <label for="team-name">Team Name</label><br>
+                                    <input type="text" id="team-name" placeholder="Enter a team name" required>
+                                </div>
+                                <div class="form-control team-tags">
+                                    <label for="team-tag">Team Tag</label><br>
+                                    <input type="text" id="team-tag" placeholder="@meet" required>
+                                </div>
+                                <div class="form-control team-description">
+                                    <label for="team-descrp">Team Description</label><br>
+                                    <textarea name="team_description" id="team-descrp" cols="20" rows="3"></textarea>
+                                </div>
+                                <div class="form-control choose-memebers">
+                                    <label for="choose-member">Select Members</label><br>
+                                    <select name="add_members" id="choose-member">
+                                        <option value="" disabled selected hidden>Select member</option>
+                                        <option value="member1">member1</option>
+                                        <option value="member2">member2</option>
+                                        <option value="member3">member3</option>
+                                        <option value="member4">member4</option>
+                                        <option value="member5">member5</option>
+                                    </select>
+                                    <button class="btn btn-success">Add</button>
+                                </div>
+                                <div class="form-control submit-from">
+                                    <button class="btn btn-submit" value="submit">Add Team</button>
+                                </div>
+                               
+                        
                             </div>
-                            <div class="team-tags" >
-                                <label for="team-tag">Team Tag</label><br>
-                                <input type="text" id ="team-tag" placeholder="@meet" required>
-                            </div>
-                            <div class="team-descr">
-                                <label for="team-descrp">Team Description</label><br>
-                                <textarea name="team_description" id="team-descrp" cols="20" rows="3"></textarea>
-                            </div>
-                            <div class="choose-memebers">
-                                <label for="select-member">Select Members</label><br>
-                                <select name="add_members" id="select-member">
-                                    <option value="" disabled selected hidden>Select member</option>
-                                    <option value="member1">member1</option>
-                                    <option value="member2">member2</option>
-                                    <option value="member3">member3</option>
-                                    <option value="member4">member4</option>
-                                    <option value="member5">member5</option>
-                                </select>
-                                <button class="btn btn-success">Add</button>
-                            </div>
-                            <button class="btn btn-submit" value="submit">Add Team</button>
-
-                        </div>
-                        <div id="close"><span>X</span></div>
-                    </form>
+                            <div id="close"><span>X</span></div>
+                        </form>
+                    </div>
+                    
                 </div>
 
             </div>
