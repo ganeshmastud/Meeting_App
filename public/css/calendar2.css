@@ -203,25 +203,40 @@ hr {
   .logo {
     margin-left: 9%;
   }
+  .nav-bar li a {
+    padding-left: 9.5%;
+  }
 }
 @media screen and (min-width: 350px) {
   .logo {
     margin-left: 8%;
+  }
+  .nav-bar li a {
+    padding-left: 8.5%;
   }
 }
 @media screen and (min-width: 400px) {
   .logo {
     margin-left: 7%;
   }
+  .nav-bar li a {
+    padding-left: 7.5%;
+  }
 }
 @media screen and (min-width: 500px) {
   .logo {
     margin-left: 7%;
   }
+  .nav-bar li a {
+    padding-left: 6.5%;
+  }
 }
 @media screen and (min-width: 520px) {
   .logo {
     margin-left: 6%;
+  }
+  .nav-bar li a {
+    padding-left: 5.5%;
   }
 }
 @media screen and (min-width: 550px) {
