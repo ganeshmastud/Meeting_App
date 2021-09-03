@@ -2,6 +2,9 @@
   width: 94%;
   margin: 0 auto;
 } */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 .heading h1 {
   padding: 0% 2.7%;
 }
@@ -12,7 +15,7 @@ hr {
 }
 
 .sub-menu {
-  width: 95%;
+  width: 96%;
   /* margin-left: 2.3em; */
   margin: 0 auto;
 }
@@ -43,6 +46,7 @@ hr {
   /* display: block; */
   padding: 0.5rem 0.8rem;
   font-size: small;
+  color: black;
 }
 .container {
   width: 95%;
@@ -76,6 +80,10 @@ hr {
   border: 1px solid grey;
   border-radius: 3px;
 }
+.meeting-card:hover {
+  border: 1px solid gold;
+}
+
 .date-time {
   display: flex;
   flex-flow: row wrap;
@@ -122,14 +130,34 @@ hr {
 #add-date,
 #description,
 #add-members,
-#filter-meet {
+#filter-meet,
+#search-for {
   width: 100%;
-  height: 2rem;
+  /* height: 2rem; */
+  padding: 0.4em 1em;
   display: inline-block;
   outline: none;
   margin-bottom: 1rem;
   border: none;
   border-radius: 3px;
+}
+#start-time,
+#end-time {
+  border: none;
+  outline: none;
+  border-radius: 2px;
+}
+#add-date:focus,
+#description:focus,
+#add-members:focus,
+#filter-meet:focus,
+#search-for:focus,
+#start-time:focus,
+#end-time:focus {
+  border: 2px solid rgb(33, 102, 105);
+  outline: 1px solid white;
+  /* outline: 2px solid white;
+  outline-offset: 2px; */
 }
 label {
   display: inline-block;
@@ -142,7 +170,8 @@ textarea,
 button {
   margin-bottom: 1.5em;
 }
-#description {
+#description,
+#search-for {
   height: 4em;
 }
 .btn {
@@ -157,11 +186,21 @@ button {
   color: white;
   border: none;
   border-radius: 3px;
-  transition: 1s;
+  transition: 400ms ease;
   padding: 0.5rem 1rem;
+  cursor: pointer;
 }
-.btn:hover {
+.btn-submit:hover {
+  outline: 2px solid rgb(33, 102, 105);
+  /* outline: 1px solid white; */
+  outline-offset: 2px;
+}
+/* .btn:hover {
   background-color: rgb(12, 117, 122);
+} */
+.btn-submit:active {
+  font-size: 1.2rem;
+  padding: 0.6rem 1.1rem;
 }
 .left-meet,
 .success {
@@ -171,13 +210,30 @@ button {
   background-color: red;
 }
 .left-meet:hover {
+  padding: 0.6rem 0.6rem;
+  font-size: 0.9rem;
   background-color: rgb(173, 20, 20);
 }
-.success {
+.left-meet:active {
+  padding: 0.5rem 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Add button style */
+.btn-success {
   padding: 0.5rem 0.8rem;
 
   background-color: rgb(33, 102, 105);
 }
+.btn-success:hover {
+  padding: 0.6rem 0.9rem;
+  font-size: 1.1rem;
+}
+.btn-success:active {
+  padding: 0.5rem 0.8rem;
+  font-size: 0.9rem;
+}
+
 #add-member {
   margin-bottom: 0.5rem;
 }

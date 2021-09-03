@@ -57,6 +57,9 @@ hr {
   border-radius: 3px;
   flex: 1 1 100%;
 }
+.team-card:hover {
+  border: 1px solid gold;
+}
 .team-descr {
   display: flex;
   font-size: medium;
@@ -91,7 +94,13 @@ hr {
   background-color: red;
 }
 .left-team:hover {
-  background-color: rgb(204, 128, 128);
+  padding: 0.6rem 0.8rem;
+  /* font-size: 0.9rem; */
+  background-color: rgb(173, 20, 20);
+}
+.left-team:active {
+  padding: 0.4rem 0.6rem;
+  /* font-size: 0.9rem; */
 }
 
 .add-meeting span {
@@ -115,8 +124,13 @@ hr {
 .btn-success:hover {
   background-color: rgb(54, 114, 117);
 }
+
 .card-blank {
   border: none;
+}
+#add-team:hover {
+  font-size: large;
+  cursor: pointer;
 }
 
 .add-team-form {
@@ -174,6 +188,18 @@ label {
   margin: 1em auto;
   width: 100%;
 }
+.btn-submit:hover {
+  outline: 2px solid rgb(33, 102, 105);
+  /* outline: 1px solid white; */
+  outline-offset: 2px;
+}
+/* .btn:hover {
+  background-color: rgb(12, 117, 122);
+} */
+.btn-submit:active {
+  font-size: 1.2rem;
+  padding: 0.6rem 1.1rem;
+}
 
 .form-grp input,
 .form-grp textarea {
@@ -182,6 +208,7 @@ label {
   width: 100%;
   border-radius: 5px;
   font-size: medium;
+  border: none;
 }
 .form-grp input:focus,
 .form-grp textarea:focus {
@@ -191,7 +218,7 @@ label {
   margin-bottom: 0.5em;
 }
 #choose-member {
-  width: 73%;
+  width: 65%;
   padding: 0.5em 0.6em 0.5em 0.5em;
 }
 
@@ -214,7 +241,7 @@ label {
     width: 350px;
   }
   #choose-member {
-    width: 77%;
+    width: 70%;
   }
   /* .form-grp {
     padding-left: 20%;

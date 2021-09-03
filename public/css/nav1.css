@@ -166,8 +166,7 @@ body {
     justify-content: space-between;
     margin-right: 9%;
   }
-  .col-right {
-  }
+
   .nav-bar li {
     margin: 0 auto;
     display: flex;
@@ -198,7 +197,7 @@ body {
   } */
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1080px) {
   .main-menu {
     margin-left: 4%;
   }

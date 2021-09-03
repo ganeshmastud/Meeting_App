@@ -35,7 +35,7 @@
                                             <a href=".\index.html">Calendar</a>
                                         </li>
                                         <li>
-                                            <a href=".\meeting.html">Mettings</a>
+                                            <a href=".\meeting.html" style="opacity: 1; background-color: var(--dark-white);">Mettings</a>
                                         </li>
                                         <li>
                                             <a href=".\Team.html">Teams</a>
@@ -71,7 +71,7 @@
                             <li class="link srch-meet" style="border:1px solid grey; 
                             border-bottom: 1px solid white; border-top-left-radius: 3px;
                             border-top-right-radius: 3px;
-                            "> <a href=".\filter_meeting.html">Filter/ Search meetings</a> </li>
+                            "> <a href=".\filter_meeting.html" style="color:#4ea1a1;">Filter/ Search meetings</a> </li>
                             <li class="link add-meet "> <a href=".\meeting.html">Add a meeting</a> </li>
                         </ul>
                     </nav>
@@ -93,11 +93,11 @@
                             </select>
                             
                             <br>
-                            <label for="srch-for">Search for</label><br>
-                            <textarea name="description" id="description"
+                            <label for="search-for">Search for</label><br>
+                            <textarea name="description" id="search-for"
                                 placeholder="Search using words which describe the meeting"></textarea>
                             <br>
-                            <button class="btn">Search</button>
+                            <button class="btn btn-submit">Search</button>
                         </form>
 
                     </div>
@@ -108,7 +108,7 @@
                         <h2>Meetigs matching search criteria</h2>
                         <hr>
                     </div>
-                    <div class="card metting-card">
+                    <div class="card meeting-card">
                         <div class="date-time">
                             <h4> 12 September 2020 </h4><span class="meet-time">06:00 - 07:30</span>
                         </div>
@@ -127,9 +127,9 @@
                             <option value="member4">member4</option>
                             <option value="member5">member5</option>
                         </select>
-                        <button class="btn success">Add</button>
+                        <button class="btn btn-success">Add</button>
                     </div>
-                    <div class="card metting-card">
+                    <div class="card meeting-card">
                         <div class="date-time">
                             <h4> 12 September 2020 </h4><span class="meet-time">09:00 - 10:30</span>
                         </div>
@@ -148,7 +148,7 @@
                             <option value="member4">member4</option>
                             <option value="member5">member5</option>
                         </select>
-                        <button class="btn success">Add</button>
+                        <button class="btn btn-success">Add</button>
                     </div>
                 </div>
 
