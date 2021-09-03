@@ -115,7 +115,7 @@ hr {
   width: 86%;
   margin: 0 auto;
   top: 0%; /* ( 40 + 2 ) * 7 + 20 */ /* (80+ 8)*6*/
-  left: 8%;
+  left: 7%;
   height: 76px; /* height= (80*(( 60(30/100))/100))+8px  ( 76+30) */
   margin: 0 0.5em;
   font-size: 1rem;
@@ -256,8 +256,8 @@ hr {
     width: 97%;
   }
   .calendar-meeting {
-    width: 89%;
-    left: 6%;
+    width: 88.5%;
+    left: 5.5%;
     overflow: hidden;
   }
 
@@ -308,6 +308,7 @@ hr {
   }
   .calendar-meeting {
     width: 89%;
+    left: 5%;
   }
   .nav-bar li a {
     padding: 1em 0.5em;
